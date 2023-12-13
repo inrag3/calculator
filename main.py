@@ -10,6 +10,8 @@ def simple_application():
     print("Sum:", sum_result)
     print("Difference:", difference)
     print("Product:", product)
+    Ошибочка вышла за 500!
+
 
 
 if __name__ == "__main__":
