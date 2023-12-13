@@ -19,11 +19,3 @@ def test_difference():
 def test_sum():
     assert sum(4, 7) == 11, "Test Case 1 Failed"
     assert sum(0, 0) == 0, "Test Case 2 Failed"
-
-# Run the tests
-if __name__ == "__main__":
-    test_multiply()
-    test_division()
-    test_difference()
-    test_sum()
-    print("All tests passed!")
