@@ -2,9 +2,14 @@ version: '3'
 
 services:
   calculator_app:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: ruby:latest
     volumes:
       - ./calculator.rb:/calculator.rb
     command: ["ruby", "calculator.rb"]
+
+  calculator_tests:
+    build: ./spec/
+    volumes:
+      - ./calculator.rb:/calculator.rb
+      - ./spec/calculator_spec.rb:/calculator_spec.rb
+    command: ["rspec", "calculator_spec.rb"]
