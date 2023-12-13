@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  calculator_app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./calculator.rb:/calculator.rb
+    command: ["ruby", "calculator.rb"]
