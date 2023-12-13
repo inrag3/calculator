@@ -1,18 +1,19 @@
-def simple_application():
-    # Perform some calculations
-    number_1 = 10
-    number_2 = 5
-    sum_result = number_1 + number_2
-    difference = number_1 - number_2
-    product = number_1 * number_2
-    
-    # Display the results (you can comment out to suppress output)
-    print("Sum:", sum_result)
-    print("Difference:", difference)
-    print("Product:", product)
-    Ошибочка вышла за 500!
+def multiply(a, b):
+    """Multiply two numbers."""
+    return a * b
 
+def division(a, b):
+    """Divide a by b. Return None if b is zero."""
+    return a / b if b != 0 else None
+
+def difference(a, b):
+    """Subtract b from a."""
+    return a - b
+
+def sum(a, b):
+    """Add two numbers."""
+    return a + b
 
 
 if __name__ == "__main__":
-    simple_application()
+    multiply(5, 3)
